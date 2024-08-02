@@ -203,17 +203,17 @@ alias history='history -30'
 #
 # Notice that both "v" and "nvim" start "neobean"
 # "vk" opens kickstart and "vl" opens lazyvim
-alias v='export NVIM_APPNAME="neobean" && /opt/homebrew/bin/nvim'
-alias vq='export NVIM_APPNAME="quarto-nvim-kickstarter" && /opt/homebrew/bin/nvim'
-alias vk='export NVIM_APPNAME="kickstart.nvim" && /opt/homebrew/bin/nvim'
-alias vl='export NVIM_APPNAME="lazyvim" && /opt/homebrew/bin/nvim'
+alias v='export NVIM_APPNAME="neobean" && //usr/local/Homebrew/nvim'
+alias vq='export NVIM_APPNAME="quarto-nvim-kickstarter" && //usr/local/Homebrew/nvim'
+alias vk='export NVIM_APPNAME="kickstart.nvim" && //usr/local/Homebrew/nvim'
+alias vl='export NVIM_APPNAME="lazyvim" && //usr/local/Homebrew/nvim'
 # I'm also leaving this "nvim" alias, which points to the "nvim" APPNAME, but
 # that APPNAME in fact points to my "neobean" config in the symlinks section
 # If I don't do this, my daily note doesn't work
 #
 # If you want to open the daily note with a different distro, update the "nvim"
 # symlink in the symlinks section
-alias nvim='export NVIM_APPNAME="nvim" && /opt/homebrew/bin/nvim'
+alias nvim='export NVIM_APPNAME="nvim" && //usr/local/Homebrew/nvim'
 
 # kubernetes, if you need help, just run 'kgp --help' for example
 alias k='kubectl'
