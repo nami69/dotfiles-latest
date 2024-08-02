@@ -265,7 +265,7 @@ esac
 if [ "$OS" = 'Mac' ]; then
 
   # Set JAVA_HOME to the OpenJDK installation managed by Homebrew
-  export JAVA_HOME="/opt/homebrew/opt/openjdk"
+  export JAVA_HOME="/usr/local/opt/openjdk"
   # Add JAVA_HOME/bin to the beginning of the PATH
   export PATH="$JAVA_HOME/bin:$PATH"
 
@@ -276,7 +276,7 @@ if [ "$OS" = 'Mac' ]; then
   alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr-4.13.1-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
   alias grun='java -Xmx500M -cp "/usr/local/lib/antlr-4.13.1-complete.jar:$CLASSPATH" org.antlr.v4.gui.TestRig'
 
-  export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+  export PATH="/usr/local/opt/libpq/bin:$PATH"
 
   # Add templ to PATH if it is installed
   # templ is installed with
@@ -378,7 +378,7 @@ if [ "$OS" = 'Mac' ]; then
   if [ -f ~/.fzf.zsh ]; then
 
     # After installing fzf with brew, you have to run the install script
-    # echo -e "y\ny\nn" | /opt/homebrew/opt/fzf/install
+    # echo -e "y\ny\nn" | /usr/local/opt/fzf/install
 
     source ~/.fzf.zsh
 
@@ -445,8 +445,8 @@ if [ "$OS" = 'Mac' ]; then
   fi
 
   # Add MySQL client to PATH, if it exists
-  if [ -d "/opt/homebrew/opt/mysql-client/bin" ]; then
-    export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
+  if [ -d "/usr/local/opt/mysql-client/bin" ]; then
+    export PATH="/usr/local/opt/mysql-client/bin:$PATH"
   fi
 
   # Source Google Cloud SDK configurations, if Homebrew and the SDK are installed
